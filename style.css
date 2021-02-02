@@ -1,0 +1,73 @@
+/* Formulario ing */
+
+/* Color boton ing */
+input.entrar{
+    width: 200px;
+    height: 30px;
+    background-color: rgba(243, 115, 11, 0.904);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: rgba(243, 115, 11, 0.904) 2px solid ;
+    
+}
+/* flechas  */
+span.info{
+    color: rgba(243, 115, 11, 0.904) ;
+    font-weight: bold;
+}
+/* color links */
+span.link{
+    color: black;
+}
+
+/* Formulario usuario */
+input.usuario{
+    width: 410px;
+    height: 30px;
+    border-radius: 3px;
+    border: grey solid 2px;
+    
+}
+input.relleno{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: grey solid 2px;
+    
+}
+select.relleno{
+    width: 210px;
+    height: 30px;
+    border-radius: 3px;
+    border: grey solid 2px;
+
+}
+/* Formulario crear cuenta */
+
+h2.nuevo{
+    margin-left: 30px;
+}
+
+input.nuevo{
+    width: 200px;
+    height: 30px;
+    border-radius: 3px;
+    border: grey solid 2px;
+}
+input.crear{
+    width: 300px;
+    height: 40px;
+    background-color: rgba(62, 156, 18, 0.726);
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    border: rgba(62, 156, 18, 0.726) 2px solid ;
+}
+
+/* posicion sections */
+
+section.posicion{
+    margin-left: 500px;
+}
+

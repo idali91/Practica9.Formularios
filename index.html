@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
+    <section class="posicion">
         <h1>Accede a tu Área de Clientes</h1>
 
         <p>Elige tu documento </p>
         <p>
-            <input type="radio" name="documento"  value="dni"> DNI o Tarjeta de residencia
+            <input type="radio" name="documento"  value="dni">DNI o Tarjeta de residencia
             <br>
             <input type="radio" name="documento" value="pasaporte"> Pasaporte
         </p>
@@ -26,70 +26,75 @@
 
         <p><input type="checkbox" name="recordar" value="recordar" id="recordar"> Recordar</p>
 
-        <p><input type="submit" value="Entrar"></p>
+        <p><input type="submit" value="Entrar" class="entrar"></p>
 
 
-        <p> > Acceder con DNI electrónico</p>
-        <p> > Mas información sobre seguridad</p>
+        <p> <span class="info">></span><a href="https://ing.ingdirect.es/pfm/#login-dnie" target="blank"><span class="link"> Acceder con DNI electrónico </span></a></p>
+        <p> <span class="info">></span> <a href="https://ing.ingdirect.es/pfm/#login/security-information" target="blank"><span class="link">Mas información sobre seguridad</span></a></p>
        
     </section>
-
+<br>
+<br>
     <hr>
 
 
-    <section>
-        <h2>Empieza creando tu usuario</h2>
+    <section class="posicion">
         <form action="web.php" method="POST">
-            <p><input type="text"  placeholder="Nombre (como sale en el DNI)" id="nombre"></p>
-        <br>
+            <h2>Empieza creando tu usuario</h2>
+            <p><input type="text"  placeholder="Nombre (como sale en el DNI)" id="nombre" class="usuario"></p>
             <p>
-                <input type="text" name="1apellido" placeholder="1º Apellido (como sale en el DNI)" id="1apellido">
-                <input type="text" name="2apellido" placeholder="2º Apellido (como sale en el DNI)" id="2apellido">
+                <input type="text" name="1apellido" placeholder="1º Apellido (como sale en el DNI)" id="1apellido" class="relleno">
+                <input type="text" name="2apellido" placeholder="2º Apellido (como sale en el DNI)" id="2apellido" class="relleno">
             </p>
             <p>
-                <select name="Tipo de documento" id="tipodoc" placeholder="Tipo documento" multiple>
+                <select name="Tipo de documento" id="tipodoc" value="Tipo documento" class="relleno">
+                    <optgroup label="search"></optgroup>
                     <option value="1" selected>DNI/NIF/CERT.AEAT</option>    
                 </select>
-            <input type="text" name="documenton" placeholder="Número de documento" id="documenton">
+            <input type="text" name="documenton" placeholder="Número de documento" id="documenton" class="relleno">
 
             </p>
 
             <p>
-                <input type="telf" id="telefono" placeholder="Móvil">
-                <input type="email" id="email" placeholder="Email">
+                <input type="telf" id="telefono" placeholder="Móvil" class="relleno">
+                <input type="email" id="email" placeholder="Email" class="relleno">
             </p>
 
         </form>
     </section>
-
+<br>
+<br>
     <hr>
 
-    <section>
-        <h2>¿Eres nuevo?</h2>
-        <p>Registrate para guardar tu informacion y hacer <br>tus pedidos de forma mas facil y rapida.</p>
+    <section class="posicion">
+        <h2 class="nuevo">¿Eres nuevo?</h2>
+        <p class="nuevo">Registrate para guardar tu informacion y hacer <br>tus pedidos de forma mas facil y rapida.</p>
 
         <form action="web.php" method="POST">
             <p>Email</p>
             <p>
-                <input type="email" id="email" placeholder="Introduce tu email">
+                <input type="email" id="email" placeholder="Introduce tu email" class="nuevo">
             </p>
+            
 
             <p>Telefono</p>
-            <p><input type="telf" id="telefono" placeholder="Tu teléfono"></p>
+            <p><input type="telf" id="telefono" placeholder="Tu teléfono" class="nuevo"></p>
+            
 
             <p>Contraseña</p>
-            <p><input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña"></p>
+            <p><input type="password" id="contraseña" name="contraseña" placeholder="Introduce tu contraseña" class="nuevo"></p>
+            
 
             <p>Confirma tu contraseña</p>
-            <p><input type="password" id="contraseña" name="contraseña" placeholder="Confirmar contraseña"></p>
-        
+            <p><input type="password" id="contraseña" name="contraseña" placeholder="Confirmar contraseña" class="nuevo"></p>
+            
 
             <p><input type="checkbox" name="check" checked> He leído y acepto  Politica de privacidad</p>
             <p><input type="checkbox" name="check" checked> Sí, acepto recibir comunicaciones comerciales <br>y ofertas personalizadas según mi perfil.</p>
 
         </form> 
 
-        <p><input type="submit" value="Crear tu cuenta"></p>
+        <p><input type="submit" value="Crea tu cuenta" class="crear"></p>
 
 
     </section>
