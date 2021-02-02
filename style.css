@@ -64,6 +64,9 @@ input.crear{
     border-radius: 6px;
     border: rgba(62, 156, 18, 0.726) 2px solid ;
 }
+span.politica{
+    color: black;
+}
 
 /* posicion sections */
 

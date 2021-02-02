@@ -18,7 +18,7 @@
         </p>
         <form action="web.php" method="POST">
             <p>Número de documento</p>
-            <p><input type="text" name="numero documento" id="ndoc" placeholder="DNI o Tarjeta de residencia"></p>
+            <p><input type="number" max="8" name="numero documento" id="ndoc" placeholder="DNI o Tarjeta de residencia"></p>
             <p>Fecha de nacimiento</p>
             <p><input type="date" placeholder="DD   | MM    | AAAA   "></p>
 
@@ -51,12 +51,12 @@
                     <optgroup label="search"></optgroup>
                     <option value="1" selected>DNI/NIF/CERT.AEAT</option>    
                 </select>
-            <input type="text" name="documenton" placeholder="Número de documento" id="documenton" class="relleno">
+            <input type="number" max="8" name="documenton" placeholder="Número de documento" id="documenton" class="relleno">
 
             </p>
 
             <p>
-                <input type="telf" id="telefono" placeholder="Móvil" class="relleno">
+                <input type="telf" id="telefono" placeholder="Móvil" max="9" class="relleno">
                 <input type="email" id="email" placeholder="Email" class="relleno">
             </p>
 
@@ -78,7 +78,7 @@
             
 
             <p>Telefono</p>
-            <p><input type="telf" id="telefono" placeholder="Tu teléfono" class="nuevo"></p>
+            <p><input type="telf" id="telefono" max="9" placeholder="Tu teléfono" class="nuevo"></p>
             
 
             <p>Contraseña</p>
@@ -89,7 +89,7 @@
             <p><input type="password" id="contraseña" name="contraseña" placeholder="Confirmar contraseña" class="nuevo"></p>
             
 
-            <p><input type="checkbox" name="check" checked> He leído y acepto  Politica de privacidad</p>
+            <p><input type="checkbox" name="check" checked> He leído y acepto <a href="https://www.pizzahut.es/info/aviso-legal" target="blank"><span class="politica">Politica de privacidad</span></a></p>
             <p><input type="checkbox" name="check" checked> Sí, acepto recibir comunicaciones comerciales <br>y ofertas personalizadas según mi perfil.</p>
 
         </form> 
